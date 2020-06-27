@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'TestPodSourceLayered'
-    s.version          = '2.0.0'
+    s.version          = '3.0.0'
     s.summary          = '私有库代码分层练习'
 
     # This description is used to generate tags and improve search results.
@@ -29,8 +29,6 @@ Pod::Spec.new do |s|
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '8.0'
-
-    s.source_files = 'TestPodSourceLayered/Classes/**/*'
 
     s.subspec 'MainCode' do |ss|
         ss.source_files = 'TestPodSourceLayered/Classes/MainCode/*.{h,m}'
