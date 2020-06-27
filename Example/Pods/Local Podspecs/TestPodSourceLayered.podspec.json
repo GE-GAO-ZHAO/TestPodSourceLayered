@@ -1,22 +1,32 @@
 {
   "name": "TestPodSourceLayered",
-  "version": "0.1.0",
-  "summary": "A short description of TestPodSourceLayered.",
+  "version": "1.0.0",
+  "summary": "私有库代码分层练习",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/gegaozhao1126@gmail.com/TestPodSourceLayered",
+  "homepage": "https://github.com/GE-GAO-ZHAO/TestPodSourceLayered.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "gegaozhao1126@gmail.com": "gegaozhao@100tal.com"
+    "gegaozhao": "gegaozhao1126@gmail.com"
   },
   "source": {
-    "git": "https://github.com/gegaozhao1126@gmail.com/TestPodSourceLayered.git",
-    "tag": "0.1.0"
+    "git": "git@github.com:GE-GAO-ZHAO/TestPodSourceLayered.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TestPodSourceLayered/Classes/**/*"
+  "source_files": "TestPodSourceLayered/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "subspecs": [
+    {
+      "name": "MainCode",
+      "source_files": "TestPodSourceLayered/Classes/MainCode/*.{h,m}"
+    }
+  ]
 }

@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "GGZComputerTool.h"
+#import "GGZComputerTool.h"
 
 FOUNDATION_EXPORT double TestPodSourceLayeredVersionNumber;
 FOUNDATION_EXPORT const unsigned char TestPodSourceLayeredVersionString[];

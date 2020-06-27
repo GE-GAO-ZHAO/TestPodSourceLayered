@@ -1,5 +1,7 @@
 PODS:
-  - TestPodSourceLayered (0.1.0)
+  - TestPodSourceLayered (1.0.0):
+    - TestPodSourceLayered/MainCode (= 1.0.0)
+  - TestPodSourceLayered/MainCode (1.0.0)
 
 DEPENDENCIES:
   - TestPodSourceLayered (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TestPodSourceLayered: 8a7204386b501ada7a5be2a65e2d5294ac2eee7b
+  TestPodSourceLayered: 3e4b943ca7c81fa5f7abc9df274684627a84ac60
 
 PODFILE CHECKSUM: 29546e265c26350d85c59eb510258b11d8dea3fa
 
