@@ -1,0 +1,6 @@
+framework module TestPodSourceLayered {
+  umbrella header "TestPodSourceLayered-umbrella.h"
+
+  export *
+  module * { export * }
+}

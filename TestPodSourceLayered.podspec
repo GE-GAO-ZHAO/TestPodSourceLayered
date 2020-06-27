@@ -7,36 +7,40 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TestPodSourceLayered'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TestPodSourceLayered.'
+    s.name             = 'TestPodSourceLayered'
+    s.version          = '1.0.0'
+    s.summary          = '私有库代码分层练习'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+    # This description is used to generate tags and improve search results.
+    #   * Think: What does it do? Why did you write it? What is the focus?
+    #   * Try to keep it short, snappy and to the point.
+    #   * Write the description between the DESC delimiters below.
+    #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    s.description      = <<-DESC
+    TODO: Add long description of the pod here.
+    DESC
 
-  s.homepage         = 'https://github.com/gegaozhao1126@gmail.com/TestPodSourceLayered'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'gegaozhao1126@gmail.com' => 'gegaozhao@100tal.com' }
-  s.source           = { :git => 'https://github.com/gegaozhao1126@gmail.com/TestPodSourceLayered.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.homepage         = 'https://github.com/GE-GAO-ZHAO/TestPodSourceLayered.git'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'gegaozhao' => 'gegaozhao1126@gmail.com' }
+    s.source           = { :git => 'git@github.com:GE-GAO-ZHAO/TestPodSourceLayered.git', :tag => s.version.to_s }
+    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '10.0'
 
-  s.source_files = 'TestPodSourceLayered/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TestPodSourceLayered' => ['TestPodSourceLayered/Assets/*.png']
-  # }
+    s.source_files = 'TestPodSourceLayered/Classes/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.subspec 'MainCode' do |ss|
+        ss.source_files = 'TestPodSourceLayered/Classes/MainCode/*.{h,m}'
+    end
+
+# s.resource_bundles = {
+#   'TestPodSourceLayered' => ['TestPodSourceLayered/Assets/*.png']
+# }
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+ s.frameworks = 'UIKit', 'Foundation'
+# s.dependency 'AFNetworking', '~> 2.3'
 end
