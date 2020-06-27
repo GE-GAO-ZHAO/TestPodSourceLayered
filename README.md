@@ -22,7 +22,7 @@ pod 'TestPodSourceLayered'
 
 ## Author
 
-gegaozhao1126@gmail.com, gegaozhao@100tal.com
+gegaozhao, gegaozhao1126@gmail.com
 
 ## License
 
