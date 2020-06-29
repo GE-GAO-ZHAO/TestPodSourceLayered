@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "gegaozhao1126@gmail.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = FA7354VW7Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -302,10 +305,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestPodSourceLayered_Example/Pods-TestPodSourceLayered_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TALMediator/TALMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/TestPodSourceLayered/TestPodSourceLayered.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TALMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TestPodSourceLayered.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,10 +499,11 @@
 			baseConfigurationReference = 59523072680831C5CE2D0703 /* Pods-TestPodSourceLayered_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FA7354VW7Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestPodSourceLayered/TestPodSourceLayered-Prefix.pch";
 				INFOPLIST_FILE = "TestPodSourceLayered/TestPodSourceLayered-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,10 +517,11 @@
 			baseConfigurationReference = 100DC34830420EEA1A004899 /* Pods-TestPodSourceLayered_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FA7354VW7Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestPodSourceLayered/TestPodSourceLayered-Prefix.pch";
 				INFOPLIST_FILE = "TestPodSourceLayered/TestPodSourceLayered-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

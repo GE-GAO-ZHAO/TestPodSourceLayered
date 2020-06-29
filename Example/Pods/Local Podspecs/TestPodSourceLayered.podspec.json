@@ -1,9 +1,9 @@
 {
   "name": "TestPodSourceLayered",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "summary": "私有库代码分层练习",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/GE-GAO-ZHAO/TestPodSourceLayered.git",
+  "homepage": "https://github.com/GE-GAO-ZHAO/TestPodSourceLayered",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,16 +13,21 @@
   },
   "source": {
     "git": "git@github.com:GE-GAO-ZHAO/TestPodSourceLayered.git",
-    "tag": "1.0.0"
+    "tag": "4.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "TestPodSourceLayered/Classes/**/*",
+  "requires_arc": true,
   "frameworks": [
     "UIKit",
     "Foundation"
   ],
+  "dependencies": {
+    "TALMediator": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "MainCode",

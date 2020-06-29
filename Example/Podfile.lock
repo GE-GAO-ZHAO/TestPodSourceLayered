@@ -1,18 +1,28 @@
 PODS:
-  - TestPodSourceLayered (1.0.0):
-    - TestPodSourceLayered/MainCode (= 1.0.0)
-  - TestPodSourceLayered/MainCode (1.0.0)
+  - TALMediator (4.0.0):
+    - TALMediator/Categary (= 4.0.0)
+  - TALMediator/Categary (4.0.0)
+  - TestPodSourceLayered (4.0.0):
+    - TALMediator
+    - TestPodSourceLayered/MainCode (= 4.0.0)
+  - TestPodSourceLayered/MainCode (4.0.0):
+    - TALMediator
 
 DEPENDENCIES:
   - TestPodSourceLayered (from `../`)
+
+SPEC REPOS:
+  https://github.com/GE-GAO-ZHAO/TALComponentTest-Spec.git:
+    - TALMediator
 
 EXTERNAL SOURCES:
   TestPodSourceLayered:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TestPodSourceLayered: 3e4b943ca7c81fa5f7abc9df274684627a84ac60
+  TALMediator: 26fbcbe056c8685538247a0d9bfaba8fc6f99dcb
+  TestPodSourceLayered: 9babfa55cf56d7fd0c299c8199f3efbfee39d9eb
 
-PODFILE CHECKSUM: 29546e265c26350d85c59eb510258b11d8dea3fa
+PODFILE CHECKSUM: 68ed99a902dc6e36d390bf413e5f79e0276bb43b
 
 COCOAPODS: 1.8.4

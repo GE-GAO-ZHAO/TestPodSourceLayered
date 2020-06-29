@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "GGZComputerTool.h"
+#import "CTMediator.h"
 
-FOUNDATION_EXPORT double TestPodSourceLayeredVersionNumber;
-FOUNDATION_EXPORT const unsigned char TestPodSourceLayeredVersionString[];
+FOUNDATION_EXPORT double TALMediatorVersionNumber;
+FOUNDATION_EXPORT const unsigned char TALMediatorVersionString[];
 
